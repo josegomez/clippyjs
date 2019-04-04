@@ -1,6 +1,10 @@
-# Clippy
+# Clippy HTML
+
+Added support for speaking HTML.
+
+# Clippy 
 > Add Clippy or his friends to any website for instant nostalgia.
-This project is a fresh rewrite of [Clippy.JS](http://smore.com/clippy-js) in ES6.
+This project is a fork of rewrite of [Clippy.JS](https://github.com/pi0/clippyjs) in ES6.
 ([Read More](http://smore.com/clippy-js))    
 
 ## Demos
@@ -21,7 +25,7 @@ For using in raw HTML/JS:
 
 ```html
 <!-- Add the stylesheet to the head -->
-<link rel="stylesheet" type="text/css" href="https://gitcdn.xyz/repo/josecgomez/clippyjs/master/assets/clippy.css">
+<link rel="stylesheet" type="text/css" href="https://gitcdn.xyz/repo/josegomez/clippyjs/master/assets/clippy.css">
 
 <!-- Add these scripts to  the bottom of the page -->
 <script src="https://unpkg.com/jquery@3.2.1"></script>
@@ -32,6 +36,7 @@ For using in raw HTML/JS:
 clippy.load('Merlin', function(agent){
     // Do anything with the loaded agent
     agent.show();
+    agent.speak('I know speak <b>HTML</b>');
 });
 </script>
 ```
@@ -70,7 +75,7 @@ agent.animations();
 // => ["MoveLeft", "Congratulate", "Hide", "Pleased", "Acknowledge", ...]
 
 // Show text balloon
-agent.speak('When all else fails, bind some paper together. My name is Clippy.');
+agent.speak('When all else fails, bind some paper together. My name is Clippy.<a href=\'google.com\'> Link</a>');
 
 // move to the given point, use animation if available
 agent.moveTo(100,100);
