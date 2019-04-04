@@ -107,7 +107,7 @@ clippy.load('Marline', function() {
 MIT
 
 
-[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bhttps%3A%2F%2Fgithub.com%2Fpi0%2Fclippyjs.svg?type=large)](https://app.fossa.io/projects/git%2Bhttps%3A%2F%2Fgithub.com%2Fpi0%2Fclippyjs?ref=badge_large)
+[![FOSSA Status](https://app.fossa.io/api/projects/git+https://github.com/josegomez/clippyjs.svg?type=large)](https://app.fossa.io/projects/git+https://github.com/josegomez/clippyjs?ref=badge_large)
 
 ## Special Thanks
 - [pi0](https://github.com/pi0/clippyjs)
