@@ -21,12 +21,12 @@ For using in raw HTML/JS:
 
 ```html
 <!-- Add the stylesheet to the head -->
-<link rel="stylesheet" type="text/css" href="https://gitcdn.xyz/repo/pi0/clippyjs/master/assets/clippy.css">
+<link rel="stylesheet" type="text/css" href="https://gitcdn.xyz/repo/josecgomez/clippyjs/master/assets/clippy.css">
 
 <!-- Add these scripts to  the bottom of the page -->
 <script src="https://unpkg.com/jquery@3.2.1"></script>
 
-<script src="https://unpkg.com/clippyjs@latest"></script>
+<script src="https://unpkg.com/clippyjs_html@latest"></script>
 
 <script type="text/javascript">
 clippy.load('Merlin', function(agent){
@@ -44,7 +44,7 @@ yarn add clippyjs # or npm install clippyjs
 
 Import and load
 ```js
-import clippy from 'clippyjs'
+import clippy from 'clippyjs_html'
 
 clippy.load('Merlin', (agent) => {
     // do anything with the loaded agent

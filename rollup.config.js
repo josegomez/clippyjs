@@ -15,20 +15,23 @@ if (!fs.existsSync(dist)) {
     fs.mkdirSync(dist);
 }
 
-module.exports = {
-    entry: path.resolve(__dirname, 'lib/index.js'),
-    external: Object.keys(dependencies),
-    moduleName: name,
+export default  {
+    input: path.resolve(__dirname, 'lib/index.js'),
+    //external: Object.keys(dependencies),
+    //moduleName: name,
+    output: {
+        file: 'dist/clippy.js',
+        format:'umd',
+        name:'clippy_html'
+    },
     plugins: [
         buble(),
         resolve({ external: ['vue'] }),
         commonjs(),
         // uglify({}, minify)
     ],
-    globals: {
-        jquery: '$'
-    },
-    targets: [
+
+    /*targets: [
         {
             format: 'umd',
             moduleName: name,
@@ -40,5 +43,5 @@ module.exports = {
             dest: path.resolve(dist, name + '.esm.js'),
             sourceMap: true
         }
-    ]
+    ]*/
 };
